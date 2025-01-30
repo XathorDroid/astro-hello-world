@@ -1,7 +1,7 @@
 ---
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
-import "../styles/global.css"
+import "../styles/global.css";
 
 const pageTitle = "About me";
 const identity = {
@@ -84,12 +84,16 @@ const textCase = "uppercase";
 				<p>Mi objetivo no son 3 días.</p>
 			)
 		}
-	</body>
 
-	<Footer />
+		<Footer />
+
+		<script>
+			import "../scripts/menu.js";
+		</script>
+	</body>
 </html>
 
-<style define:vars={{skillColor, fontWeight, textCase}}>
+<style define:vars={{ skillColor, fontWeight, textCase }}>
 	html,
 	body {
 		margin: 0;
